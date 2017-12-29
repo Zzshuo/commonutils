@@ -18,7 +18,7 @@ public class ZsSortUtils {
             return Collections.emptyMap();
         }
 
-        List<Map.Entry<Integer, Integer>> list = new ArrayList<Map.Entry<Integer, Integer>>(oldMap.entrySet());
+        List<Map.Entry<Integer, Integer>> list = new ArrayList<>(oldMap.entrySet());
 
         Collections.sort(list, new Comparator<Map.Entry<Integer, Integer>>() {
             @Override
@@ -26,7 +26,7 @@ public class ZsSortUtils {
                 return o1.getValue() - o2.getValue();
             }
         });
-        Map<Integer, Integer> newMap = new LinkedHashMap<Integer, Integer>();
+        Map<Integer, Integer> newMap = new LinkedHashMap<>();
         for (Iterator<Map.Entry<Integer, Integer>> it = list.iterator(); it.hasNext(); ) {
             Map.Entry<Integer, Integer> entry = it.next();
             newMap.put(entry.getKey(), entry.getValue());
