@@ -8,12 +8,10 @@ import java.util.Date;
  * @author zeus
  * @date 2017/11/1
  */
-public class ZsDateUtils {
+public class DateUtils {
     private static final String FORMAT = "yyyy-MM-dd HH:mm:ss";
 
-    public ZsDateUtils() {
-    }
-
+    
     public static String format(Date date) {
         return format(date, FORMAT);
     }

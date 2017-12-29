@@ -4,7 +4,7 @@ import java.util.*;
  * @author zeus
  * @date 2017/11/20
  */
-public class ZsSortUtils {
+public class SortUtils {
 
     /**
      * 以Map的value排序，并返回x
