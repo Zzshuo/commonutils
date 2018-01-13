@@ -6,6 +6,11 @@ import java.util.UUID;
  */
 public class IdUtils {
 
+    /**
+     * UUID
+     *
+     * @return
+     */
     public static String generateStringId() {
         return UUID.randomUUID().toString();
     }

@@ -7,7 +7,7 @@ import java.util.*;
 public class SortUtils {
 
     /**
-     * 以Map的value排序，并返回x
+     * 以Map的value排序，并返回LinkedHashMap
      *
      * @param oldMap
      * @return
