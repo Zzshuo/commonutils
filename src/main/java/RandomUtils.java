@@ -7,7 +7,7 @@ import java.util.List;
  */
 public class RandomUtils {
 
-    public final static int      BASE     = 10000;
+    public static final int      BASE     = 10000;
     private static      Randomer instance = Randomer.getInstance();
 
     public static Randomer getInstance() {
@@ -85,6 +85,7 @@ public class RandomUtils {
 
     /**
      * Collection 随机获取数据
+     *
      * @param sources
      * @param <T>
      * @return
@@ -95,6 +96,7 @@ public class RandomUtils {
 
     /**
      * Collection 随机获取数据 去除excludes
+     *
      * @param sources
      * @param excludes
      * @param <T>
@@ -106,6 +108,7 @@ public class RandomUtils {
 
     /**
      * Collection 随机获取数据，去除excludes
+     *
      * @param sources
      * @param excludes
      * @param <T>
@@ -117,6 +120,7 @@ public class RandomUtils {
 
     /**
      * List 随机获取数据
+     *
      * @param sources
      * @param <T>
      * @return
